@@ -1,26 +1,31 @@
+[![NPM Version](https://badge.fury.io/js/esta.svg?style=flat)](https://npmjs.org/package/promisify-aws)
+
 # promisify-aws
+
 promisify-aws is an aws-sdk V2 enhanced promise which allows users to see stacktraces when the request has failed
 
 ## Example
 
 ```typescript
 async function main() {
-  const client = new DynamoDB();
+	const client = new DynamoDB();
 
-  try {
-    await promisifyAwsRequest(client.scan({
-      TableName: 'flo', // Not exists
-    }));
-  }
-  catch (err: any) {
-    console.error(err);
-  }
+	try {
+		await promisifyAwsRequest(
+			client.scan({
+				TableName: 'flo', // Not exists
+			})
+		);
+	} catch (err: any) {
+		console.error(err);
+	}
 }
 
 main().catch(console.log);
 ```
 
 output should be:
+
 ```
 Error
     at promisifyAwsRequest (.../index.js:12:31)
