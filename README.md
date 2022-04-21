@@ -4,6 +4,7 @@
 
 promisify-aws is an aws-sdk V2 enhanced promise which allows users to see stacktraces when the request has failed
 
+[An article explaining the problem and solution](https://medium.com/@zviwex/how-to-fix-async-aws-sdk-useless-error-messages-a19847700a24)
 ## Example
 
 ```typescript
