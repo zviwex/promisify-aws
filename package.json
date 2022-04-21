@@ -1,0 +1,48 @@
+{
+  "name": "promisify-aws",
+  "description": "Aws sdk V2 enhanced promise",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zviwex/promisify-aws.git"
+  },
+  "version": "0.0.1",
+  "types": "lib/index.ts",
+  "releaseFiles": [
+    "lib/",
+    "build/",
+    "README.md",
+    "LICENSE",
+    "package.json",
+    "yarn.lock"
+  ],
+  "scripts": {
+    "reset": "yarn clean && yarn && yarn build",
+    "clean": "rimraf ./node_modules ./build",
+    "build": "tsc --build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.25",
+    "aws-sdk": "^2.1062.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "4.25.0",
+    "@typescript-eslint/parser": "5.9.0",
+    "eslint": "7.16.0",
+    "eslint-config-prettier": "7.1.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-prettier": "3.3.0",
+    "prettier": "2.2.1",
+    "rimraf": "3.0.2",
+    "typescript": "^4.2.4",
+    "jest": "^27.4.7"
+  },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/**/*.js"
+    ]
+  }
+}
