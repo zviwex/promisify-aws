@@ -1,6 +1,6 @@
-[![NPM Version](https://badge.fury.io/js/esta.svg?style=flat)](https://npmjs.org/package/promisify-aws)
 
 # promisify-aws
+[![NPM Version](https://badge.fury.io/js/promisify-aws.svg?style=flat)](https://npmjs.org/package/promisify-aws)
 
 promisify-aws is an aws-sdk V2 enhanced promise which allows users to see stacktraces when the request has failed
 
